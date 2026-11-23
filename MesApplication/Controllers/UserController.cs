@@ -120,16 +120,6 @@ namespace MesApplication.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost]
-        public async Task<IActionResult> AssignRoles(int userId, [FromBody]List<int> roleIds)
-        {
-            try
-            {
-                var result =await _userService.AssignRolesToUserAsync(userId, roleIds);
-                return Ok(new { result, date = "角色分配成功" });
-            }
-            catch(Exception ex)
-            {  return BadRequest(ex.Message);}
-        }
+       
     }
 }

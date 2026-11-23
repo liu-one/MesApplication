@@ -81,6 +81,8 @@ namespace MES.Infrastructure
                     PermName = "用户管理",
                     IsActive = true,
                     CreatedAt = DateTime.Now,
+                    ResourPath="T",
+                    ResourceType="T",
                     CreatedBy = 1
                 },
                 new Permission
@@ -90,6 +92,8 @@ namespace MES.Infrastructure
                     PermName = "角色管理",
                     IsActive = true,
                     CreatedAt = DateTime.Now,
+                     ResourPath="T",
+                    ResourceType="T",
                     CreatedBy = 1
                 },
                 new Permission
@@ -99,6 +103,8 @@ namespace MES.Infrastructure
                     PermName = "部门管理",
                     IsActive = true,
                     CreatedAt = DateTime.Now,
+                     ResourPath="T",
+                    ResourceType="T",
                     CreatedBy = 1
                 },
                 new Permission
@@ -108,6 +114,8 @@ namespace MES.Infrastructure
                     PermName = "权限管理",
                     IsActive = true,
                     CreatedAt = DateTime.Now,
+                     ResourPath="T",
+                    ResourceType="T",
                     CreatedBy = 1
                 },
                 new Permission
@@ -117,11 +125,13 @@ namespace MES.Infrastructure
                     PermName = "生产计划管理",
                     IsActive = true,
                     CreatedAt = DateTime.Now,
+                     ResourPath="T",
+                    ResourceType="T",
                     CreatedBy = 1
                 }
             };
+            db.Insertable(permissions).ExecuteCommand();
 
-            
 
             // 添加角色
             var roles = new List<Role>
