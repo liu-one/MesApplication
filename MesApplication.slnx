@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MES.Application/MES.Application.csproj" Id="886a39bb-0d4c-483f-8c38-0394607920f2" />
+  <Project Path="MES.Domain/MES.Domain.csproj" />
+  <Project Path="MES.Infrastructure/MES.Infrastructure.csproj" />
+  <Project Path="MesApplication/MesApplication.csproj" />
+</Solution>
